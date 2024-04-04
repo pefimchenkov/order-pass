@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("@/fonts/sfns-display-thin.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("@/fonts/sfns-display-thin.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("@/fonts/sfns-display-thin.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url("@/fonts/sfns-display-thin.ttf");
+    font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
