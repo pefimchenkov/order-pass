@@ -15,6 +15,7 @@ const routes = [
         meta: {
           affix: true,
           title: 'Заказ пропуска',
+          meta: { transition: 'slide-left' },
         }
       },
 
@@ -25,6 +26,7 @@ const routes = [
         meta: {
           affix: true,
           title: 'Гость',
+          meta: { transition: 'slide-left' },
         }
       },
 
@@ -35,6 +37,7 @@ const routes = [
         meta: {
           affix: true,
           title: 'Владелец',
+          meta: { transition: 'slide-left' },
         }
       },
 
@@ -45,6 +48,7 @@ const routes = [
         meta: {
           affix: true,
           title: 'На автомобиле',
+          meta: { transition: 'slide-left' },
         }
       },
 
@@ -55,6 +59,7 @@ const routes = [
         meta: {
           affix: true,
           title: 'Пешком',
+          meta: { transition: 'slide-left' },
         }
       }
     ]
