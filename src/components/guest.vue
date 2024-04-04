@@ -10,11 +10,13 @@
 
 
           <div class="flex items-center gap-4 pt-12">
-            <button class="flex items-center gap-2 px-6 py-4 text-gray-500 rounded-xl bg-gray-900 shadow-glow hover:shadow-teal-500/40 hover:-translate-y-1 transition ease-out">
+            <button class="flex items-center gap-2 px-6 py-4 text-gray-500 rounded-xl bg-gray-900 shadow-glow hover:shadow-teal-500/40 hover:-translate-y-1 transition ease-out"
+            @click="gotoAutomobileForm">
               <Automobile class="h-7 w-7" />
               Автомобиль
             </button>
-            <button class="flex items-center gap-2 px-6 py-4 text-gray-500 rounded-xl bg-gray-900 shadow-glow hover:shadow-teal-500/40 hover:-translate-y-1 transition ease-out">
+            <button class="flex items-center gap-2 px-6 py-4 text-gray-500 rounded-xl bg-gray-900 shadow-glow hover:shadow-teal-500/40 hover:-translate-y-1 transition ease-out"
+            @click="gotoPedestrianForm">
               <Pedestrian class="h-7 w-7" />
               Пешеход
             </button>
@@ -39,6 +41,18 @@
 
 import Automobile from '@/icons/automobile.svg'
 import Pedestrian from '@/icons/pedestrian.svg'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function gotoAutomobileForm() {
+    router.push({ name: "AutomobileForm" })
+}
+
+function gotoPedestrianForm() {
+    router.push({ name: "PedestrianForm" })
+}
+
 
 
 

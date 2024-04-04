@@ -36,6 +36,26 @@ const routes = [
           affix: true,
           title: 'Владелец',
         }
+      },
+
+      {
+        path: '/automobile_form',
+        component: () => import('@/components/automobileForm.vue'),
+        name: 'AutomobileForm',
+        meta: {
+          affix: true,
+          title: 'На автомобиле',
+        }
+      },
+
+      {
+        path: '/pedestrian_form',
+        component: () => import('@/components/pedestrianForm.vue'),
+        name: 'PedestrianForm',
+        meta: {
+          affix: true,
+          title: 'Пешком',
+        }
       }
     ]
   },
