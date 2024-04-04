@@ -21,11 +21,6 @@
 
   import Circle from '@/img/circle.svg'
   
-  import { onMounted } from 'vue';
-
-  onMounted(() => {
-      console.log('Layout is active')
-  })
   
   </script>
   

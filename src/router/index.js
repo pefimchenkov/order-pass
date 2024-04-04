@@ -6,25 +6,35 @@ const routes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/step1',
+    redirect: '/pass_order',
     children: [
       {
-        path: '/step1',
-        component: () => import('@/components/step1.vue'),
-        name: 'Step 1',
+        path: '/pass_order',
+        component: () => import('@/components/passOrder.vue'),
+        name: 'PassOrder',
         meta: {
           affix: true,
-          title: 'Шаг первый',
+          title: 'Заказ пропуска',
         }
       },
 
       {
-        path: '/step2',
-        component: () => import('@/components/step2.vue'),
-        name: 'Step 2',
+        path: '/guest',
+        component: () => import('@/components/guest.vue'),
+        name: 'Guest',
         meta: {
           affix: true,
-          title: 'Шаг второй',
+          title: 'Гость',
+        }
+      },
+
+      {
+        path: '/owner',
+        component: () => import('@/components/owner.vue'),
+        name: 'Owner',
+        meta: {
+          affix: true,
+          title: 'Владелец',
         }
       }
     ]

@@ -1,18 +1,18 @@
 <template>
     <!-- Desktop Navbar -->
     <nav class="flex items-center justify-between">
-        <a href="#" class="text-4xl font-bold">Заказ пропусков</a>
+        <a href="#" class="text-4xl font-bold" style="color: moccasin">Заказ пропусков</a>
 
         <div class="hidden md:flex items-center gap-32">
-          <ul class="flex items-center gap-12 font-medium text-gray-500">
+          <ul class="flex items-center gap-12 font-medium text-gray-500" style="color: skyblue;">
             <li>
-              <a href="#" class="group text-xl  hover:text-white transition duration-300">
+              <a href="#" @click="gotoMainPage" class="group text-lg  hover:text-white transition duration-300">
                 Главная
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-teal-500"></span>
               </a>
             </li>
             <li>
-              <a href="#" class="group text-xl  hover:text-white transition duration-300">
+              <a href="#" class="group text-lg  hover:text-white transition duration-300">
                 Новости
                 <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-teal-500"></span>
               </a>
@@ -29,8 +29,8 @@
         </button>
 
         <div class="hidden md:flex items-center gap-4 font-medium text-gray-500">
-          <a href="#" class="hover:text-white text-xl mr-3">Войти</a>
-          <a href="#" class="relative hover:text-white text-xl">
+          <a href="#" class="hover:text-white text-lg mr-3">Войти</a>
+          <a href="#" class="relative hover:text-white text-lg">
             <span>@сапр</span>
             <Decoration class="w-24 absolute" style="left: -2rem" />
           </a>
@@ -40,6 +40,14 @@
 
 <script setup>
 
+import { useRouter } from 'vue-router';
 import Decoration from '@/img/decoration.svg'
+
+const router = useRouter();
+
+
+function gotoMainPage() {
+  router.push({ name: 'PassOrder' })
+}
 
 </script>
